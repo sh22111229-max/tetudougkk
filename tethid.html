@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ | あなたの名前</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #3a3a3a, #1e1e1e);
+    }
+
+    .hero img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid #00ffff;
+    }
+
+    .hero h1 {
+      margin-top: 20px;
+      font-size: 2.5em;
+      color: #ffffff;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #bbbbbb;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #00ffff;
+      color: #121212;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00cccc;
+    }
+
+    .contact {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .contact button {
+      padding: 10px;
+      background-color: #00ffff;
+      color: #121212;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #00cccc;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: #777;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>あなたの名前</strong></div>
+    <nav>
+      <a href="#about">プロフィール</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="about">
+    <img src="profile.jpg" alt="プロフィール写真">
+    <h1>こんにちは、私は〇〇です</h1>
+    <p>Webデベロッパー / デザイナー / クリエイター</p>
+    <a href="#contact" class="btn">お問い合わせはこちら</a>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>お問い合わせフォーム</h2>
+    <form>
+      <input type="text" placeholder="お名前" required>
+      <input type="email" placeholder="メールアドレス" required>
+      <textarea rows="5" placeholder="メッセージ内容" required></textarea>
+      <button type="submit">送信</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 あなたの名前 - All rights reserved.
+  </footer>
+
+</body>
+</html>
